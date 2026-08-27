@@ -3,11 +3,12 @@ class Solution {
         Map<String, List<String>> map = new HashMap<>();
         /* This hash map gonna store the key as the frequencey value
            ex: "abc" ,"bac" "ab"
-           key for "abc" -> "111 rest of the characters 0 or any other things"
+           key for "abc" -> "1#1#1# rest of the characters # or any other things"
+           Why we can't use 
            it first add this
            <"111", abc>
            then step 2
-           key for "bac" -> "111 rest of the characters 0 or any other things"
+           key for "bac" -> "1#1#1# rest of the characters 0 or any other things"
            The point here , It have a same key as the previous one
            so we can added it like this below one
            <"111", ["abc", "bac"]>
