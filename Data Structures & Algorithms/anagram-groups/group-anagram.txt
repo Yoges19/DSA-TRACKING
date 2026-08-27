@@ -1,0 +1,17 @@
+Why we use # after every freq[i]
+
+ex:
+[[bdddddddddd],[bbbbbbbbbbc]]
+if we don't use symbol after freq[i] the key will be
+key for [bdddddddddd] => 01010
+key for [bbbbbbbbbbc] => 01010
+*WORNG*
+"the both keys are same but this is not an anagram"
+
+if we use the symbol
+
+key for [bdddddddddd] => 0#1#0#10
+key for [bbbbbbbbbbc] => 0#10#1#0
+here we seperate the count using symbols
+*CORRECT*
+"This will be work correctly"
